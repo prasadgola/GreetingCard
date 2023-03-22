@@ -30,7 +30,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    GreetingWithImage(message = "Happy", kind = "Birthday", name = "Sam!", from = "Basavaprasad")
+                    GreetingWithImage(message = "Happy", kind = "New Year", name = "Sam!", from = "Basavaprasad")
                 }
             }
         }
@@ -44,7 +44,7 @@ fun GreetingWithImage(message: String, kind: String, name: String, from: String)
         Image(painter = image, contentDescription = null, modifier = Modifier
             .fillMaxHeight()
             .fillMaxWidth()
-            , contentScale = ContentScale.Crop
+            ,contentScale = ContentScale.Crop
         )
         TypeOfGreetingWithText(message = message, kind = kind, name = name, from = from)
     }
